@@ -17,7 +17,8 @@ public class Main {
             HttpGet request = new HttpGet("https://swapi.dev/api/people");
             CloseableHttpResponse response = httpClient.execute(request);
             try {
-                System.out.println("Hello World!");
+                System.out.println("Welcome to:");
+                System.out.println("Feature/gradle-test branch!");
                 System.out.println(response.getProtocolVersion());              // HTTP/1.1
                 System.out.println(response.getStatusLine().getStatusCode());   // 200
                 System.out.println(response.getStatusLine().getReasonPhrase()); // OK
